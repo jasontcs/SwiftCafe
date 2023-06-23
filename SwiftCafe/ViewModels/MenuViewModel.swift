@@ -1,0 +1,51 @@
+//
+//  MenuViewModel.swift
+//  SwiftCafe
+//
+//  Created by Jason Tse on 23/6/2023.
+//
+
+import Combine
+import Foundation
+
+@MainActor final class MenuViewModel: ObservableObject {
+    @Published var products: [Product]?
+    @Published var cartCount: Int?
+    
+    var cancellables = Set<AnyCancellable>()
+    let dataService = DataService.instance
+    
+    init() {
+        Task {
+            await dataService.$products
+                .combineLatest(await dataService.$cartItems)
+                .receive(on:DispatchQueue.main)
+                .sink { completion in
+                    switch completion {
+                    case .finished:
+                        break
+                    case .failure(let error):
+                        print("ERROR: \(error)")
+                        break
+                    }
+                } receiveValue: { products, cartItems in
+                    self.products = products?.products
+                    self.cartCount = cartItems.reduce(0, { current, next in
+                        current + Int(next.amount)
+                    })
+                }.store(in: &cancellables)
+            
+        }
+    }
+    func fetchProducts() async {
+        do {
+            try await dataService.fetchProducts()
+        } catch {
+            print("Error \(error)")
+        }
+    }
+    
+    func addToCart(_ product:Product) async {
+        await dataService.addProductToCart(product)
+    }
+}

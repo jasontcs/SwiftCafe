@@ -8,21 +8,41 @@
 
 /* Begin PBXBuildFile section */
 		14674DAB2A45499000C9CE68 /* SwiftCafeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14674DAA2A45499000C9CE68 /* SwiftCafeApp.swift */; };
-		14674DAD2A45499000C9CE68 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14674DAC2A45499000C9CE68 /* ContentView.swift */; };
 		14674DAF2A45499300C9CE68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14674DAE2A45499300C9CE68 /* Assets.xcassets */; };
 		14674DB22A45499300C9CE68 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14674DB12A45499300C9CE68 /* Preview Assets.xcassets */; };
-		14674DB42A45499300C9CE68 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14674DB32A45499300C9CE68 /* Persistence.swift */; };
-		14674DB72A45499300C9CE68 /* SwiftCafe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 14674DB52A45499300C9CE68 /* SwiftCafe.xcdatamodeld */; };
+		14674DC32A454A3300C9CE68 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14674DC22A454A3300C9CE68 /* LoginView.swift */; };
+		14674DC52A454A4600C9CE68 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14674DC42A454A4600C9CE68 /* MainView.swift */; };
+		14674DC72A454A5800C9CE68 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14674DC62A454A5800C9CE68 /* MenuView.swift */; };
+		14674DC92A454A6800C9CE68 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14674DC82A454A6800C9CE68 /* CartView.swift */; };
+		14674DCB2A4556CB00C9CE68 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14674DCA2A4556CB00C9CE68 /* LoginViewModel.swift */; };
+		14674DCF2A4557EF00C9CE68 /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14674DCE2A4557EF00C9CE68 /* AuthModel.swift */; };
+		146E91C32A457F2A00CD574D /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146E91C22A457F2A00CD574D /* DataService.swift */; };
+		146E91C52A45823200CD574D /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146E91C42A45823200CD574D /* MainViewModel.swift */; };
+		146E91C72A45906000CD574D /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146E91C62A45906000CD574D /* MenuViewModel.swift */; };
+		146E91CB2A45911700CD574D /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146E91CA2A45911700CD574D /* ProductModel.swift */; };
+		146E91CD2A4598E100CD574D /* products.json in Resources */ = {isa = PBXBuildFile; fileRef = 146E91CC2A4598E100CD574D /* products.json */; };
+		146E91D02A45AB1100CD574D /* ShoppingCart.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 146E91CE2A45AB1100CD574D /* ShoppingCart.xcdatamodeld */; };
+		146E91D22A45BA9B00CD574D /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146E91D12A45BA9B00CD574D /* CartViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		14674DA72A45499000C9CE68 /* SwiftCafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftCafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14674DAA2A45499000C9CE68 /* SwiftCafeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCafeApp.swift; sourceTree = "<group>"; };
-		14674DAC2A45499000C9CE68 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		14674DAE2A45499300C9CE68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14674DB12A45499300C9CE68 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		14674DB32A45499300C9CE68 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		14674DB62A45499300C9CE68 /* SwiftCafe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftCafe.xcdatamodel; sourceTree = "<group>"; };
+		14674DC22A454A3300C9CE68 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		14674DC42A454A4600C9CE68 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		14674DC62A454A5800C9CE68 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		14674DC82A454A6800C9CE68 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		14674DCA2A4556CB00C9CE68 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		14674DCE2A4557EF00C9CE68 /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
+		146E91C22A457F2A00CD574D /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		146E91C42A45823200CD574D /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		146E91C62A45906000CD574D /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
+		146E91CA2A45911700CD574D /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+		146E91CC2A4598E100CD574D /* products.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = products.json; sourceTree = "<group>"; };
+		146E91CF2A45AB1100CD574D /* ShoppingCart.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShoppingCart.xcdatamodel; sourceTree = "<group>"; };
+		146E91D12A45BA9B00CD574D /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +59,7 @@
 		14674D9E2A45499000C9CE68 = {
 			isa = PBXGroup;
 			children = (
+				146E91CC2A4598E100CD574D /* products.json */,
 				14674DA92A45499000C9CE68 /* SwiftCafe */,
 				14674DA82A45499000C9CE68 /* Products */,
 			);
@@ -55,11 +76,13 @@
 		14674DA92A45499000C9CE68 /* SwiftCafe */ = {
 			isa = PBXGroup;
 			children = (
+				146E91C12A457F1B00CD574D /* Services */,
+				14674DBF2A4549B800C9CE68 /* Models */,
+				14674DBE2A4549AE00C9CE68 /* ViewModels */,
+				14674DBD2A4549A400C9CE68 /* Views */,
 				14674DAA2A45499000C9CE68 /* SwiftCafeApp.swift */,
-				14674DAC2A45499000C9CE68 /* ContentView.swift */,
 				14674DAE2A45499300C9CE68 /* Assets.xcassets */,
-				14674DB32A45499300C9CE68 /* Persistence.swift */,
-				14674DB52A45499300C9CE68 /* SwiftCafe.xcdatamodeld */,
+				146E91CE2A45AB1100CD574D /* ShoppingCart.xcdatamodeld */,
 				14674DB02A45499300C9CE68 /* Preview Content */,
 			);
 			path = SwiftCafe;
@@ -71,6 +94,45 @@
 				14674DB12A45499300C9CE68 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		14674DBD2A4549A400C9CE68 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				14674DC22A454A3300C9CE68 /* LoginView.swift */,
+				14674DC42A454A4600C9CE68 /* MainView.swift */,
+				14674DC62A454A5800C9CE68 /* MenuView.swift */,
+				14674DC82A454A6800C9CE68 /* CartView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		14674DBE2A4549AE00C9CE68 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				14674DCA2A4556CB00C9CE68 /* LoginViewModel.swift */,
+				146E91C42A45823200CD574D /* MainViewModel.swift */,
+				146E91C62A45906000CD574D /* MenuViewModel.swift */,
+				146E91D12A45BA9B00CD574D /* CartViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		14674DBF2A4549B800C9CE68 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				14674DCE2A4557EF00C9CE68 /* AuthModel.swift */,
+				146E91CA2A45911700CD574D /* ProductModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		146E91C12A457F1B00CD574D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				146E91C22A457F2A00CD574D /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +193,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				146E91CD2A4598E100CD574D /* products.json in Resources */,
 				14674DB22A45499300C9CE68 /* Preview Assets.xcassets in Resources */,
 				14674DAF2A45499300C9CE68 /* Assets.xcassets in Resources */,
 			);
@@ -143,10 +206,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14674DB42A45499300C9CE68 /* Persistence.swift in Sources */,
-				14674DAD2A45499000C9CE68 /* ContentView.swift in Sources */,
-				14674DB72A45499300C9CE68 /* SwiftCafe.xcdatamodeld in Sources */,
+				14674DC72A454A5800C9CE68 /* MenuView.swift in Sources */,
+				14674DC52A454A4600C9CE68 /* MainView.swift in Sources */,
+				146E91D22A45BA9B00CD574D /* CartViewModel.swift in Sources */,
+				146E91CB2A45911700CD574D /* ProductModel.swift in Sources */,
+				146E91C32A457F2A00CD574D /* DataService.swift in Sources */,
+				14674DC32A454A3300C9CE68 /* LoginView.swift in Sources */,
+				14674DC92A454A6800C9CE68 /* CartView.swift in Sources */,
 				14674DAB2A45499000C9CE68 /* SwiftCafeApp.swift in Sources */,
+				14674DCB2A4556CB00C9CE68 /* LoginViewModel.swift in Sources */,
+				146E91C72A45906000CD574D /* MenuViewModel.swift in Sources */,
+				14674DCF2A4557EF00C9CE68 /* AuthModel.swift in Sources */,
+				146E91D02A45AB1100CD574D /* ShoppingCart.xcdatamodeld in Sources */,
+				146E91C52A45823200CD574D /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,13 +347,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftCafe/Preview Content\"";
+				DEVELOPMENT_TEAM = FC78BY6K7K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,13 +377,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftCafe/Preview Content\"";
+				DEVELOPMENT_TEAM = FC78BY6K7K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -347,13 +423,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		14674DB52A45499300C9CE68 /* SwiftCafe.xcdatamodeld */ = {
+		146E91CE2A45AB1100CD574D /* ShoppingCart.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				14674DB62A45499300C9CE68 /* SwiftCafe.xcdatamodel */,
+				146E91CF2A45AB1100CD574D /* ShoppingCart.xcdatamodel */,
 			);
-			currentVersion = 14674DB62A45499300C9CE68 /* SwiftCafe.xcdatamodel */;
-			path = SwiftCafe.xcdatamodeld;
+			currentVersion = 146E91CF2A45AB1100CD574D /* ShoppingCart.xcdatamodel */;
+			path = ShoppingCart.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
