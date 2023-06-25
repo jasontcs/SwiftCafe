@@ -1,7 +1,7 @@
 # Swift Cafe
 
 A SwiftUI project with features
-- Authenication
+- Authentication
 - Online Products Menu
 - Offline Shopping Cart
 
@@ -9,7 +9,7 @@ A SwiftUI project with features
 
 This project is a starting point for an MVVM SwiftUI App.
 
-- **iOS14** Min Deplotment Target
+- **iOS14** Min Deployment Target
 - Use **MVVM** architecture
 - Use **Async/Await** as it is beautiful
 - Use **Combine** to make the ViewModels clean
