@@ -16,4 +16,4 @@ This project is a starting point for an MVVM SwiftUI App.
 
 ## Screenshot
 
-<img src="https://github.com/jasontcs/SwiftCafe/blob/master/swift_cafe.jpeg" width="240">
+<img src="https://github.com/jasontcs/SwiftCafe/blob/main/swift_cafe.jpeg" width="240">
