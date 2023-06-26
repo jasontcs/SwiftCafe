@@ -13,3 +13,7 @@ This project is a starting point for an MVVM SwiftUI App.
 - Use **MVVM** architecture
 - Use **Async/Await** as it is beautiful
 - Use **Combine** to make the ViewModels clean
+
+## Screenshot
+
+<img src="https://github.com/jasontcs/SwiftCafe/blob/master/swift_cafe.jpeg" width="240">
