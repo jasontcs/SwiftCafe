@@ -5,6 +5,11 @@ An iOS [SwiftUI](https://developer.apple.com/xcode/swiftui/) App using MVVM (Mod
 2. RESTful API Products Menu
 3. Core Data Shopping Cart
 
+## Screenshot
+|                                           Login Page                                           |                                           Menu Page                                           |                                           Cart Page                                           |
+| :--------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------: |
+| <img src="https://github.com/jasontcs/SwiftCafe/blob/main/screenshots/login.jpeg" width="240"> | <img src="https://github.com/jasontcs/SwiftCafe/blob/main/screenshots/menu.jpeg" width="240"> | <img src="https://github.com/jasontcs/SwiftCafe/blob/main/screenshots/cart.jpeg" width="240"> |
+
 ## Tech Stacks
 - UI: iOS [SwiftUI](https://developer.apple.com/xcode/swiftui/)
 - Design Pattern: MVVM (Model-View-ViewModel)
@@ -38,8 +43,3 @@ SwiftCafe
 ## Architecture - MVVM Pattern
 
 <img src="https://github.com/jasontcs/SwiftCafe/blob/main/screenshots/architecture.png" width="720">
-
-## Screenshot
-|                                           Login Page                                           |                                           Menu Page                                           |                                           Cart Page                                           |
-| :--------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------: |
-| <img src="https://github.com/jasontcs/SwiftCafe/blob/main/screenshots/login.jpeg" width="240"> | <img src="https://github.com/jasontcs/SwiftCafe/blob/main/screenshots/menu.jpeg" width="240"> | <img src="https://github.com/jasontcs/SwiftCafe/blob/main/screenshots/cart.jpeg" width="240"> |
