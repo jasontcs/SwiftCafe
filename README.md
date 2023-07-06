@@ -13,7 +13,7 @@ An iOS [SwiftUI](https://developer.apple.com/xcode/swiftui/) App using MVVM (Mod
 ## Tech Stacks
 - UI: iOS [SwiftUI](https://developer.apple.com/xcode/swiftui/)
 - Design Pattern: MVVM (Model-View-ViewModel)
-- Async Operations: [Async / Await](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/) & [Combine](https://developer.apple.com/documentation/combine) , to prevent callback hell & make the code clean
+- Async Operations: [Async / Await](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/) & [Combine](https://developer.apple.com/documentation/combine) to prevent callback hell & make the code clean
 ## Project Structure
 ```
 SwiftCafe
