@@ -43,7 +43,7 @@ This project is a starting point for an MVVM SwiftUI App.
 
 ## Architecture - MVVM Pattern
 
-<img src="https://github.com/jasontcs/SwiftCafe/blob/main/screenshots/architecture.jpeg" width="720">
+<img src="https://github.com/jasontcs/SwiftCafe/blob/main/screenshots/architecture.png" width="720">
 
 ## Screenshot
 |                                           Login Page                                           |                                           Menu Page                                           |                                           Cart Page                                           |
