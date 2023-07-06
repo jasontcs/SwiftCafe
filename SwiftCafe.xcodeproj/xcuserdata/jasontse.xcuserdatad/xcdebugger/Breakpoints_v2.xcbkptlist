@@ -3,4 +3,54 @@
    uuid = "8C140709-D73E-40A1-9A54-6CA0332DE9C8"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "06852172-0B8E-4D03-8FBA-03CAD0FA7584"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftCafe/ViewModels/MainViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "init(repository:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "06852172-0B8E-4D03-8FBA-03CAD0FA7584 - 9f915d1c263d3334"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Combine.Subscribers.Completion&lt;Swift.Never&gt;) -&gt; () in SwiftCafe.MainViewModel.init(repository: SwiftCafe.CafeRepository) -&gt; SwiftCafe.MainViewModel"
+                  moduleName = "SwiftCafe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jasontse/Desktop/SwiftCafe/SwiftCafe/ViewModels/MainViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "06852172-0B8E-4D03-8FBA-03CAD0FA7584 - cda5a7f247ffa641"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Combine.Subscribers.Completion&lt;Swift.Never&gt;) -&gt; () in SwiftCafe.MainViewModel.init(repository: SwiftCafe.CafeRepositoryProtocol) -&gt; SwiftCafe.MainViewModel"
+                  moduleName = "SwiftCafe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jasontse/Desktop/SwiftCafe/SwiftCafe/ViewModels/MainViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

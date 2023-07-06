@@ -16,7 +16,7 @@
 		14674DC92A454A6800C9CE68 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14674DC82A454A6800C9CE68 /* CartView.swift */; };
 		14674DCB2A4556CB00C9CE68 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14674DCA2A4556CB00C9CE68 /* LoginViewModel.swift */; };
 		14674DCF2A4557EF00C9CE68 /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14674DCE2A4557EF00C9CE68 /* AuthModel.swift */; };
-		146E91C32A457F2A00CD574D /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146E91C22A457F2A00CD574D /* DataService.swift */; };
+		146E91C32A457F2A00CD574D /* CafeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146E91C22A457F2A00CD574D /* CafeRepository.swift */; };
 		146E91C52A45823200CD574D /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146E91C42A45823200CD574D /* MainViewModel.swift */; };
 		146E91C72A45906000CD574D /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146E91C62A45906000CD574D /* MenuViewModel.swift */; };
 		146E91CB2A45911700CD574D /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146E91CA2A45911700CD574D /* ProductModel.swift */; };
@@ -25,6 +25,8 @@
 		146E91D22A45BA9B00CD574D /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146E91D12A45BA9B00CD574D /* CartViewModel.swift */; };
 		14B6D6162A54230C00DDFC66 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14B6D6152A54230C00DDFC66 /* GoogleService-Info.plist */; };
 		14B6D61A2A54268C00DDFC66 /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 14B6D6192A54268C00DDFC66 /* FirebaseAppDistribution-Beta */; };
+		14BEB0842A55875200A106AB /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BEB0832A55875200A106AB /* NetworkService.swift */; };
+		14BEB0862A55875C00A106AB /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BEB0852A55875C00A106AB /* CoreDataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +40,7 @@
 		14674DC82A454A6800C9CE68 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		14674DCA2A4556CB00C9CE68 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		14674DCE2A4557EF00C9CE68 /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
-		146E91C22A457F2A00CD574D /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		146E91C22A457F2A00CD574D /* CafeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeRepository.swift; sourceTree = "<group>"; };
 		146E91C42A45823200CD574D /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		146E91C62A45906000CD574D /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
 		146E91CA2A45911700CD574D /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
@@ -46,6 +48,8 @@
 		146E91CF2A45AB1100CD574D /* ShoppingCart.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShoppingCart.xcdatamodel; sourceTree = "<group>"; };
 		146E91D12A45BA9B00CD574D /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
 		14B6D6152A54230C00DDFC66 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		14BEB0832A55875200A106AB /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		14BEB0852A55875C00A106AB /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 		14674DA92A45499000C9CE68 /* SwiftCafe */ = {
 			isa = PBXGroup;
 			children = (
+				14BEB0822A55859700A106AB /* Repositories */,
 				14B6D6152A54230C00DDFC66 /* GoogleService-Info.plist */,
 				146E91C12A457F1B00CD574D /* Services */,
 				14674DBF2A4549B800C9CE68 /* Models */,
@@ -136,7 +141,8 @@
 		146E91C12A457F1B00CD574D /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				146E91C22A457F2A00CD574D /* DataService.swift */,
+				14BEB0832A55875200A106AB /* NetworkService.swift */,
+				14BEB0852A55875C00A106AB /* CoreDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -146,6 +152,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		14BEB0822A55859700A106AB /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				146E91C22A457F2A00CD574D /* CafeRepository.swift */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,8 +244,10 @@
 				14674DC52A454A4600C9CE68 /* MainView.swift in Sources */,
 				146E91D22A45BA9B00CD574D /* CartViewModel.swift in Sources */,
 				146E91CB2A45911700CD574D /* ProductModel.swift in Sources */,
-				146E91C32A457F2A00CD574D /* DataService.swift in Sources */,
+				146E91C32A457F2A00CD574D /* CafeRepository.swift in Sources */,
 				14674DC32A454A3300C9CE68 /* LoginView.swift in Sources */,
+				14BEB0842A55875200A106AB /* NetworkService.swift in Sources */,
+				14BEB0862A55875C00A106AB /* CoreDataService.swift in Sources */,
 				14674DC92A454A6800C9CE68 /* CartView.swift in Sources */,
 				14674DAB2A45499000C9CE68 /* SwiftCafeApp.swift in Sources */,
 				14674DCB2A4556CB00C9CE68 /* LoginViewModel.swift in Sources */,

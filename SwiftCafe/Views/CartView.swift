@@ -70,9 +70,7 @@ struct CartItemView: View {
             Text("$\(cartItem.product.price) x \(cartItem.amount)")
                 .font(.title3)
             Button(action: {
-                Task {
-                    await vm.removeOnTap(cartItem)
-                }
+                vm.removeOnTap(cartItem)
             }, label: {
                 Image(systemName: "minus.circle.fill")
             })

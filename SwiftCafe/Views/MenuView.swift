@@ -64,9 +64,7 @@ struct ProductsItemView: View {
             Image(systemName: "cart.badge.plus")
         }
         .onTapGesture {
-            Task {
-               await vm.addToCart(product)   
-            }
+            vm.addToCart(product)
         }
     }
 }

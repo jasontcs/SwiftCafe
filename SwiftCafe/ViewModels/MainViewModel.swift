@@ -12,24 +12,23 @@ import Foundation
     @Published var user: User?
     
     var cancellables = Set<AnyCancellable>()
-    let dataService = DataService.instance
+    let repository: CafeRepositoryProtocol
     
-    init() {
-        Task {
-            await dataService.$user
-                .receive(on:DispatchQueue.main)
-                .sink { completion in
-                    switch completion {
-                    case .finished:
-                        break
-                    case .failure(let error):
-                        print("ERROR: \(error)")
-                        break
-                    }
-                } receiveValue: { user in
-                    self.user = user
-                }.store(in: &cancellables)
-            
-        }
+    init(repository: CafeRepositoryProtocol = CafeRepository.shared) {
+        self.repository = repository
+        
+        repository.userPublisher
+            .receive(on:DispatchQueue.main)
+            .sink { completion in
+                switch completion {
+                case .finished:
+                    break
+                case .failure(let error):
+                    print("ERROR: \(error)")
+                    break
+                }
+            } receiveValue: { user in
+                self.user = user
+            }.store(in: &cancellables)
     }
 }

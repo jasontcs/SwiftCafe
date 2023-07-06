@@ -13,39 +13,38 @@ import Foundation
     @Published var cartCount: Int?
     
     var cancellables = Set<AnyCancellable>()
-    let dataService = DataService.instance
+    let repository: CafeRepositoryProtocol
     
-    init() {
-        Task {
-            await dataService.$products
-                .combineLatest(await dataService.$cartItems)
-                .receive(on:DispatchQueue.main)
-                .sink { completion in
-                    switch completion {
-                    case .finished:
-                        break
-                    case .failure(let error):
-                        print("ERROR: \(error)")
-                        break
-                    }
-                } receiveValue: { products, cartItems in
-                    self.products = products?.products
-                    self.cartCount = cartItems.reduce(0, { current, next in
-                        current + Int(next.amount)
-                    })
-                }.store(in: &cancellables)
-            
-        }
+    init(repository: CafeRepositoryProtocol = CafeRepository.shared) {
+        self.repository = repository
+        
+        repository.productsPublisher
+            .combineLatest(repository.cartItemsPublisher)
+            .receive(on:DispatchQueue.main)
+            .sink { completion in
+                switch completion {
+                case .finished:
+                    break
+                case .failure(let error):
+                    print("ERROR: \(error)")
+                    break
+                }
+            } receiveValue: { products, cartItems in
+                self.products = products?.products
+                self.cartCount = cartItems.reduce(0, { current, next in
+                    current + Int(next.amount)
+                })
+            }.store(in: &cancellables)
     }
     func fetchProducts() async {
         do {
-            try await dataService.fetchProducts()
+            try await repository.fetchProducts()
         } catch {
             print("Error \(error)")
         }
     }
     
-    func addToCart(_ product:Product) async {
-        await dataService.addProductToCart(product)
+    func addToCart(_ product:Product) {
+        repository.addProductToCart(product)
     }
 }

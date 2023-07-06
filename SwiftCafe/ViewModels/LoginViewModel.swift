@@ -11,9 +11,13 @@ import Foundation
     @Published var username: String = ""
     @Published var password: String = ""
     
-    let dataService = DataService.instance
+    let repository: CafeRepositoryProtocol
+    
+    init(repository: CafeRepositoryProtocol = CafeRepository.shared) {
+        self.repository = repository
+    }
     
     func onLoginButtonTapped() async {
-        await dataService.postLoginRequest(username: username, password: password)
+        await repository.postLoginRequest(username: username, password: password)
     }
 }

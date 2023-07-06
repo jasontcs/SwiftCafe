@@ -13,36 +13,35 @@ import Foundation
     @Published var cartItems: [CartItem] = []
     
     var cancellables = Set<AnyCancellable>()
-    let dataService = DataService.instance
+    let repository: CafeRepositoryProtocol
     
-    init() {
-        Task {
-            await dataService.$cartItems
-                .combineLatest(await dataService.$products)
-                .receive(on:DispatchQueue.main)
-                .sink { completion in
-                    switch completion {
-                    case .finished:
-                        break
-                    case .failure(let error):
-                        print("ERROR: \(error)")
-                        break
+    init(repository: CafeRepositoryProtocol = CafeRepository.shared) {
+        self.repository = repository
+        
+        repository.cartItemsPublisher
+            .combineLatest(repository.productsPublisher)
+            .receive(on:DispatchQueue.main)
+            .sink { completion in
+                switch completion {
+                case .finished:
+                    break
+                case .failure(let error):
+                    print("ERROR: \(error)")
+                    break
+                }
+            } receiveValue: { cartItems, products in
+                self.cartItems = cartItems.compactMap { cartItem in
+                    guard let product = products?.products.first(where: {
+                        $0.id == Int(cartItem.productId) }
+                    ) else {
+                        return nil
                     }
-                } receiveValue: { cartItems, products in
-                    self.cartItems = cartItems.compactMap { cartItem in
-                        guard let product = products?.products.first(where: {
-                            $0.id == Int(cartItem.productId) }
-                        ) else {
-                            return nil
-                        }
-                        return CartItem(product: product, amount: Int(cartItem.amount))
-                    }
-                }.store(in: &cancellables)
-            
-        }
+                    return CartItem(product: product, amount: Int(cartItem.amount))
+                }
+            }.store(in: &cancellables)
     }
     
-    func removeOnTap(_ item: CartItem) async {
-       await dataService.removeProductFromCart(item.product)
+    func removeOnTap(_ item: CartItem) {
+        repository.removeProductFromCart(item.product)
     }
 }
