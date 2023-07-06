@@ -1,12 +1,14 @@
 # Swift Cafe
-
-An iOS SwiftUI App using MVVM & Combine 
-
+An iOS [SwiftUI](https://developer.apple.com/xcode/swiftui/) App using MVVM (Model-View-ViewModel) pattern & [Combine](https://developer.apple.com/documentation/combine) Framework, support iOS14+
 ## Features
-- Authentication
-- RESTful API Products Menu
-- Core Data Shopping Cart
+1. Authentication
+2. RESTful API Products Menu
+3. Core Data Shopping Cart
 
+## Tech Stacks
+- UI: iOS [SwiftUI](https://developer.apple.com/xcode/swiftui/)
+- Design Pattern: MVVM (Model-View-ViewModel)
+- Async Operations: [Async / Await](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/) & [Combine](https://developer.apple.com/documentation/combine) , to prevent callback hell & make the code clean
 ## Project Structure
 ```
 SwiftCafe
@@ -32,14 +34,6 @@ SwiftCafe
    ├─ MainView.swift
    └─ MenuView.swift
 ```
-## Topics
-
-This project is a starting point for an MVVM SwiftUI App.
-
-- **iOS14** Min Deployment Target
-- Use **MVVM** architecture
-- Use **Async/Await** as it is beautiful
-- Use **Combine** to make the ViewModels clean
 
 ## Architecture - MVVM Pattern
 
