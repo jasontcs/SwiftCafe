@@ -58,7 +58,7 @@ struct ProductsItemView: View {
             }
             Spacer()
             VStack {
-                Text("$\(product.price)")
+                Text("\(product.price.formatted(.currency(code: "AUD")))")
                     .font(.title3)
             }
             Image(systemName: "cart.badge.plus")

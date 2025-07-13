@@ -12,5 +12,6 @@ struct User: Codable {
     let username, email, firstName, lastName: String
     let gender: String
     let image: String
-    let token: String
+    let accessToken: String
+    let refreshToken: String
 }

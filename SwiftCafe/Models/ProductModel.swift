@@ -15,10 +15,11 @@ struct Products: Codable {
 struct Product: Codable, Identifiable {
     let id: Int
     let title, description: String
-    let price: Int
+    let price: Double
     let discountPercentage, rating: Double
     let stock: Int
-    let brand, category, thumbnail: String
+    let brand: String?
+    let category, thumbnail: String
     let images: [String]
 }
 

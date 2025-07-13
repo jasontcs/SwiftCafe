@@ -67,7 +67,7 @@ struct CartItemView: View {
                     .lineLimit(1)
             }
             Spacer()
-            Text("$\(cartItem.product.price) x \(cartItem.amount)")
+            Text("\(cartItem.product.price.formatted(.currency(code: "AUD"))) x \(cartItem.amount)")
                 .font(.title3)
             Button(action: {
                 vm.removeOnTap(cartItem)

@@ -50,8 +50,8 @@ struct LoginView: View {
             }
         }
         .onAppear {
-            vm.username = "atuny0"
-            vm.password = "9uQFF1Lh"
+            vm.username = "emilys"
+            vm.password = "emilyspass"
         }
     }
 }

@@ -43,7 +43,7 @@ final class CafeRepository : CafeRepositoryProtocol {
     var productsPublisher: Published<Products?>.Publisher { $products }
     var cartItemsPublisher: Published<[CartItemEntity]>.Publisher { $cartItems }
     
-    static let shared = CafeRepository()
+    static let shared: CafeRepositoryProtocol = CafeRepository()
     
     func postLoginRequest(username: String, password: String) async {
         let json: [String: Any] = ["username": username,
@@ -52,6 +52,7 @@ final class CafeRepository : CafeRepositoryProtocol {
         
         do {
             let data = try await networkService.post(url: "https://dummyjson.com/auth/login", body: jsonData)
+            
             user = try? JSONDecoder().decode(User.self, from: data)
             print("Login Success \(user?.email ?? "")")
         } catch {
@@ -60,7 +61,7 @@ final class CafeRepository : CafeRepositoryProtocol {
     }
     
     func fetchProducts() async throws {
-        let data = try await networkService.get(url: "https://dummyjson.com/auth/products", token: user?.token ?? "")
+        let data = try await networkService.get(url: "https://dummyjson.com/products", token: user?.accessToken ?? "")
 
 //        MOCK
         
