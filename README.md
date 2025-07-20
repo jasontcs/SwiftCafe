@@ -1,5 +1,7 @@
 # Swift Cafe
-An iOS [SwiftUI](https://developer.apple.com/xcode/swiftui/) App using MVVM (Model-View-ViewModel) pattern & [Combine](https://developer.apple.com/documentation/combine) Framework, support iOS14+
+An iOS [SwiftUI](https://developer.apple.com/xcode/swiftui/) App using MVVM (Model-View-ViewModel) pattern, [Combine](https://developer.apple.com/documentation/combine) Framework, support iOS14+
+
+Unit Tests & UI Tests using [XCText](https://developer.apple.com/documentation/xctest)
 ## Features
 1. Authentication
 2. RESTful API Products Menu
