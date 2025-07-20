@@ -45,7 +45,7 @@ struct CartView: View {
             .disabled(vm.cartItems.count == 0)
             .padding()
             .frame(maxWidth: .infinity)
-            .background(vm.cartItems.count > 0 ? Color("CafeThemeColor") : .gray)
+            .background(vm.cartItems.count > 0 ? Color(.tintColor) : .gray)
             .foregroundColor(.white)
             .cornerRadius(10)
             .padding()
@@ -67,7 +67,7 @@ struct CartItemView: View {
                     .lineLimit(1)
             }
             Spacer()
-            Text("$\(cartItem.product.price) x \(cartItem.amount)")
+            Text("\(cartItem.product.price.formatted(.currency(code: "AUD"))) x \(cartItem.amount)")
                 .font(.title3)
             Button(action: {
                 vm.removeOnTap(cartItem)

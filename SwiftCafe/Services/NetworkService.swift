@@ -33,3 +33,36 @@ final class NetworkService: NetworkServiceProtocol {
         return data
     }
 }
+
+final class MockNetworkService: NetworkServiceProtocol {
+    
+    var shouldThrowError = false
+    
+    var mockResponse: Data?
+    
+    func post(url: String, body: Data?) async throws -> Data {
+        
+        if shouldThrowError {
+            throw URLError(.unknown)
+        }
+        
+        guard let mockResponse else {
+            throw URLError(.badServerResponse)
+        }
+        
+        return mockResponse
+    }
+    
+    func get(url: String, token: String) async throws -> Data {
+        
+        if shouldThrowError {
+            throw URLError(.unknown)
+        }
+        
+        guard let mockResponse else {
+            throw URLError(.badServerResponse)
+        }
+        
+        return mockResponse
+    }
+}

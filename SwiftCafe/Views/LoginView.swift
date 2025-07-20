@@ -15,7 +15,7 @@ struct LoginView: View {
             geo in
             VStack {
                 ZStack {
-                    Color("CafeThemeColor").ignoresSafeArea()
+                    Color(.tintColor).ignoresSafeArea()
                     VStack {
                         Image(systemName: "cup.and.saucer")
                             .resizable()
@@ -44,14 +44,14 @@ struct LoginView: View {
                     .frame(maxWidth: .infinity)
                     .font(.headline)
                     .foregroundColor(.white)
-                    .background(Color("CafeThemeColor"))
+                    .background(Color(.tintColor))
                     .cornerRadius(10)
                 }
             }
         }
         .onAppear {
-            vm.username = "atuny0"
-            vm.password = "9uQFF1Lh"
+            vm.username = "emilys"
+            vm.password = "emilyspass"
         }
     }
 }
